@@ -22,10 +22,12 @@ You’ll start by editing this README file to learn how to edit a file in Bitbuc
 ## TESTING
 1. Clone the repository
 2. Create a virtual environment
-3. Install the requirement file
+  python -m venv venv
+  .\venv\Scripts\Activate
+4. Install the requirement file
     * pip install -r requirement.txt
-4. Run the script
-    * uvicon app:app --reload
+5. Run the script
+    * uvicorn app:app --reload
 
 
 
