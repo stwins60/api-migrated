@@ -50,6 +50,7 @@ Thumbs.db
 
 # Virtual environments
 venv
+demo-env
 
 # .env files
 .env

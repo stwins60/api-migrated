@@ -6,7 +6,16 @@ app = FastAPI()
 @app.get("/")
 def read_root():
     return {
-        "message": "Welcome to the Stock API"
+        "message": """Welcome to the Stock API!
+        To get all stocks, go to /stock
+        To get a stock by its symbol, go to /stock/{stock_symbol}
+        To get a stock by its id, go to /stock/id/{id}
+        To create a stock, go to /stock
+        To delete a stock by its symbol, go to /stock/{stock_symbol}
+        To delete all stocks, go to /stock
+        To update a stock by its symbol, go to /stock/{stock_symbol}
+        To update all stocks, go to /stock
+        """
     }
 
 @app.get("/stock")
